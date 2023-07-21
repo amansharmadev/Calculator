@@ -92,6 +92,7 @@ function CalculatorScreen() {
     if (operator && previousInput && inputDisplay) {
       const result = eval(previousInput + operator + inputDisplay );
       displayResult(result);
+      setInputNeedsToClear(true);
     }
   }
 
